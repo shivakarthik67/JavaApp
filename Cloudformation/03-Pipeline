@@ -14,18 +14,22 @@ Parameters:
   GithubBranch:
     Type: String
     Default: master
+    Description: enter the branch name
   GithubOAuthToken:
     Type: String
     Default: ac72cd362a2e5ae9c63379f2b9b6ca4a787f2cd1
+    Description: Github authentication token
   ContainerPort:
     Type: Number
     Default: 8080
   Cluster:
     Type: String
     Default: create-cluster-ECSCluster-cau9IelAMn5D
+    Description: Enter cluster name
   Service:
     Type: String  
     Default: nodeapp
+    Description: Enter the service name
 Resources:
 
   # Create an ECR Repository to store docker images
